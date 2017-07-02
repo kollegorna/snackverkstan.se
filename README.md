@@ -1,4 +1,4 @@
- http://snackverstan.se.s3-website-eu-west-1.amazonaws.com
+http://snackverstan.se.s3-website-eu-west-1.amazonaws.com
 
 ## Local setup
 
@@ -27,3 +27,6 @@ Builds Middleman and create a BrowserSync server that watches all changes
 
 Builds Middleman
 
+## Deployment
+
+Codeship automatically deploys master branch to S3 bucket.
