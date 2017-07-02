@@ -1,5 +1,4 @@
 ---
-title: Snackverkstan
 ---
 
 # Snackverkstan i Almedalen 2017
