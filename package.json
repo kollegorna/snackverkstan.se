@@ -1,0 +1,12 @@
+{
+  "name": "snackverkstan-se",
+  "version": "1.0.0",
+  "description": "Snackverkstan.se website",
+  "devDependencies": {
+    "bower": "~1.7.2",
+    "browser-sync": "~2.11.0",
+    "gulp": "~3.9.0",
+    "gulp-util": "~3.0.5",
+    "fs": "0.0.2"
+  }
+}
