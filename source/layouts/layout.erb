@@ -6,7 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title><%= current_page.data.title || "Snackverkstan Almedalen 2017" %></title>
+
+  <meta property="og:title" content="<%= current_page.data.title || "nackverkstan Almedalen 2017" %>">
+  <meta property="og:url" content="https://snackverkstan.se<%= current_page.url %>">
+  <meta property="og:description" content="<%= current_page.data.description || "Behöver du en webbplats, app, kampanj eller webbtjänst? I Snackverkstan kan få din idé utförd utan kostnad." %>">
+  <meta property="og:image" content="https://snackverkstan.se<%= current_page.data.share_image || '@TODO' %>">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:site_name" content="Snackverkstan">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="<%= current_page.data.title || "Snackverkstan Almedalen 2017" %>">
+  <meta name="twitter:description" content="<%= current_page.data.description || "Behöver du en webbplats, app, kampanj eller webbtjänst? I Snackverkstan kan få din idé utförd utan kostnad." %>">
+  <meta name="twitter:image" content="https://snackverkstan.se<%= current_page.data.share_image || '@TODO' %>">
+  <meta name="twitter:site" content="@snackverkstan">
+
   <%= stylesheet_link_tag "application" %>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-11425486-33', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+
+  </script>
 </head>
 <body>
   <%= partial "partials/header" %>
