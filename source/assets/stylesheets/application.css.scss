@@ -1,27 +1,70 @@
 //=require normalize-css/normalize.css
 
+@import "variables";
+@import "setup";
+@import "buttons";
+@import "form";
+@import "animations";
+
 @charset "utf-8";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: sans-serif;
+  background: $light-blue image-url('grid.svg') repeat center top;
+  background-size: 50px 50px;
+  background-attachment: fixed;
+  font-family: 'Source Code Pro', monospace;
   font-size: 16px;
   line-height: 1.6;
-  max-width: 600px;
+  margin: 50px 0;
+  color: $licorice;
+}
+
+.container {
+  background: white;
+  width: 749px;
+  max-width: 90%;
+  padding: 25px;
+  padding-top: 75px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: $tablet) {
+    padding: 50px;
+    padding-bottom: 25px;
+  }
 }
 
-h1 {
+.logo {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  left: 40px;
+  width: 100px;
+  height: auto;
+  animation: logo-rotation 40s infinite linear;
 
+  @media (min-width: $tablet) {
+    left: 80px;
+  }
+
+  @media (min-width: $laptop) {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    z-index: 0;
+  }
 }
 
-h2 {
-
-}
-
-h3 {
-  margin: 0;
-}
-
-p {
-  margin: 0 0 20px;
+svg {
+  width: 14px;
+  height: auto;
+  display: inline-block;
+  vertical-align: baseline;
+  fill: $blue;
 }

@@ -5,5 +5,9 @@
     "normalize-css": "~7.0.0",
     "jquery": "^3.2.1",
     "formchimp": "^1.2.1"
+  },
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "svg-injector": "^1.1.3"
   }
 }

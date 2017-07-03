@@ -1,5 +1,6 @@
 //=require jquery
 //=require formchimp
+//=require svg-injector
 
 (function($) {
   $(".newsletter").formchimp({
@@ -13,4 +14,7 @@
 
     }
   });
+
+  var mySVGsToInject = document.querySelectorAll('img.svg');
+  SVGInjector(mySVGsToInject);
 })(jQuery);

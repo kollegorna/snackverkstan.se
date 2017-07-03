@@ -1,0 +1,65 @@
+h1, h2, h3, h4, h5 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $blue;
+}
+
+h1 {
+  display: none;
+}
+
+h2 {
+  font-size: 1rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 2px;
+    margin-right: 10px;
+    background: $blue;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 1.2rem;
+  }
+}
+
+h3 {
+  margin: 0;
+  font-size: 0.9rem;
+  color: $licorice;
+
+  @media (min-width: $tablet) {
+    font-size: 1rem;
+  }
+}
+
+p {
+  margin: 0 0 20px 0;
+}
+
+p, li {
+  font-size: 0.8rem;
+
+  @media (min-width: $tablet) {
+    font-size: 1rem;
+  }
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+
+  &:visited {
+    color: $purple;
+  }
+
+  &:hover {
+    color: lighten($blue, 20);
+  }
+}

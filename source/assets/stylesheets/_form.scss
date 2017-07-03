@@ -1,0 +1,65 @@
+.newsletter-box {
+  background: $blue;
+  margin-bottom: 20px;
+  width: 749px;
+  max-width: 90%;
+  padding: 25px;
+  margin: 0 auto;
+  color: white;
+
+  @media (min-width: $tablet) {
+    padding: 50px;
+  }
+
+  p {
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.form {
+  margin-bottom: 25px;
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.newsletter__response {
+  padding-top: 20px;
+  display: block;
+  clear: both;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  background: $light-blue;
+  border: 0;
+  padding: 12px 15px;
+  font-family: 'Source Code Pro', monospace;
+
+  @media (min-width: $tablet) {
+    float: left;
+    width: 78%;
+  }
+}
+
+input[type="submit"] {
+  @extend .button;
+  @extend .button--warning;
+  margin: 10px auto 0 auto;
+  display: table;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    float: right;
+    width: 20%;
+    margin: 0;
+  }
+}

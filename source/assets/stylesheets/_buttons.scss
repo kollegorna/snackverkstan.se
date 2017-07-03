@@ -1,0 +1,42 @@
+.button {
+  padding: 12px 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 0;
+
+  &--primary {
+    color: $licorice;
+    background: $green;
+
+    &:hover {
+      background: lighten($green, 10);
+    }
+  }
+
+  &--secondary {
+    color: white;
+    background: $blue;
+
+    &:hover {
+      background: lighten($blue, 10);
+    }
+  }
+
+  &--tertiary {
+    color: white;
+    background: $licorice;
+
+    &:hover {
+      background: lighten($licorice, 10);
+    }
+  }
+
+  &--warning {
+    color: $licorice;
+    background: $yellow;
+
+    &:hover {
+      background: lighten($yellow, 10);
+    }
+  }
+}
