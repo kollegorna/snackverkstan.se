@@ -34,8 +34,11 @@ body {
   z-index: 1;
 
   @media (min-width: $tablet) {
-    padding: 50px;
-    padding-bottom: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @media (min-width: $laptop) {
+    padding-top: 50px;
   }
 }
 
