@@ -7,10 +7,10 @@
 
   <title><%= current_page.data.title || "Snackverkstan Almedalen 2017" %></title>
 
-  <meta property="og:title" content="<%= current_page.data.title || "nackverkstan Almedalen 2017" %>">
+  <meta property="og:title" content="<%= current_page.data.title || "Snackverkstan Almedalen 2017" %>">
   <meta property="og:url" content="https://snackverkstan.se<%= current_page.url %>">
   <meta property="og:description" content="<%= current_page.data.description || "Behöver du en webbplats, app, kampanj eller webbtjänst? I Snackverkstan kan få din idé utförd utan kostnad." %>">
-  <meta property="og:image" content="https://snackverkstan.se<%= current_page.data.share_image || '@TODO' %>">
+  <meta property="og:image" content="https://snackverkstan.se/<%= current_page.data.share_image || image_path('share-image.png') %>">
   <meta property="og:locale" content="sv_SE">
   <meta property="og:site_name" content="Snackverkstan">
   <meta property="og:type" content="website">
@@ -18,7 +18,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="<%= current_page.data.title || "Snackverkstan Almedalen 2017" %>">
   <meta name="twitter:description" content="<%= current_page.data.description || "Behöver du en webbplats, app, kampanj eller webbtjänst? I Snackverkstan kan få din idé utförd utan kostnad." %>">
-  <meta name="twitter:image" content="https://snackverkstan.se<%= current_page.data.share_image || '@TODO' %>">
+  <meta name="twitter:image" content="https://snackverkstan.se/<%= current_page.data.share_image || image_path('share-image.png') %>">
   <meta name="twitter:site" content="@snackverkstan">
 
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,600" rel="stylesheet">
