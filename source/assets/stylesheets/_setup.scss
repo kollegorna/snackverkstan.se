@@ -65,6 +65,10 @@ a {
   }
 
   &:hover {
-    color: lighten($blue, 20);
+    color: darken($green, 35);
+
+    svg {
+      fill: darken($green, 35);
+    }
   }
 }
