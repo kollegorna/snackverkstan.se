@@ -64,7 +64,12 @@ body {
   }
 }
 
-svg {
+.chart {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.home svg {
   width: 14px;
   height: auto;
   display: inline-block;

@@ -38,7 +38,7 @@
 
   </script>
 </head>
-<body>
+<body class="<%= current_page.data.body_classes || "" %>">
   <%= partial "partials/header" %>
 
   <%= yield %>
