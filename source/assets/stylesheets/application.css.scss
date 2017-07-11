@@ -67,6 +67,10 @@ body {
 .chart {
   margin-top: 1rem;
   margin-bottom: 2rem;
+  
+  .highcharts-credits {
+    opacity: 0;
+  }
 }
 
 .home svg {

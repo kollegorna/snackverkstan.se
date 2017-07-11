@@ -31,7 +31,10 @@
         backgroundColor: null,
         plotBorderWidth: 0,
         plotShadow: false,
-        shadow: false
+        shadow: false,
+        style: {
+          fontFamily: '"Source Code Pro", sans-serif'
+        }
       },
       title: {
         style: {
